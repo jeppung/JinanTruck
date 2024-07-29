@@ -1,117 +1,192 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Link from "next/link";
+import Showcase from "../components/Showcase";
+import ServiceItem from "../components/ServiceItem";
+import WhyUsItem from "../components/WhyUsItem";
+import { FaWhatsapp } from "react-icons/fa";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
+    <main>
+      <section>
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          src={"/banner.jpg"}
+          layout="responsive"
+          width={0}
+          height={0}
+          quality={100}
           priority
+          alt="banner"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      </section>
+      <section className="bg-[#333333] px-5 text-white">
+        <div className="container mx-auto flex flex-col justify-between gap-5 py-[20px] lg:flex-row">
+          <div className="flex flex-col items-center gap-0 lg:items-start">
+            <h2 className="text-2xl">Welcome to our website</h2>
+            <p className="font-light">www.jinantruck.web.id</p>
+          </div>
+          <div className="flex overflow-clip rounded-lg">
+            <div className="flex h-full w-full items-center justify-center bg-[#999999] py-5 text-center lg:w-96">
+              <p className="text-sm font-light">
+                PT. Jinan Truck Power Indonesia
+              </p>
+            </div>
+            <div className="flex w-60 items-center justify-center bg-black">
+              <Link
+                href="https://api.whatsapp.com/send?phone=6287880215500"
+                className="cursor-pointer font-light"
+              >
+                HUBUNGI KAMI
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-black">
+        <div className="container mx-auto flex flex-wrap justify-center gap-5 px-5 py-20 lg:px-0">
+          <Showcase
+            imageSrc="/1-sinotruk-1.png"
+            titleSrc="/sinotruk-logo.png"
+          />
+          <Showcase imageSrc="/2-sitrak.png" titleSrc="/sitrak-logo.png" />
+          <Showcase
+            imageSrc="/weichai-engine.png"
+            titleSrc="/weichai-logo.png"
+          />
+          <Showcase imageSrc="/4-sany.png" titleSrc="/sany-logo.png" />
+        </div>
+      </section>
+      <section className="bg-[#666666] py-20" id="aboutus">
+        <div className="container mx-auto flex flex-col items-center gap-20 p-5 lg:flex-row">
+          <div>
+            <Image
+              src={"/about-us.png"}
+              width={600}
+              height={0}
+              className=""
+              alt="about-us"
+            />
+          </div>
+          <div className="flex-1 text-white">
+            <div>
+              <h2 className="text-2xl font-bold text-black">
+                PT. Jinan Truck Power Indonesia
+              </h2>
+              <p>produsen truk tugas berat professional</p>
+            </div>
+            <div className="mt-5 flex flex-col gap-5 font-light">
+              <p>
+                Kami adalah perusahaan terkemuka yang menyediakan layanan
+                profesional dalam bidang Spareparts Contract Support, Unit
+                Purchase, dan VHS Spareparts Contract. Berdedikasi untuk
+                melayani pelanggan di wilayah Jabodetabek, kami bangga menjadi
+                mitra terpercaya bagi industri otomotif dan konstruksi. Dengan
+                produk berkualitas tinggi dari merek-merek terkenal seperti
+                SINOTRUK, SITRAK, WEICHAI, dan SANY, kami siap memenuhi segala
+                kebutuhan Anda.
+              </p>
+              <p>
+                Dengan PT. Jinan Truck Power Indonesia, Anda mendapatkan lebih
+                dari sekedar produk; Anda mendapatkan mitra yang berkomitmen
+                untuk mendukung keberhasilan operasional Anda. Hubungi kami
+                sekarang dan rasakan pelayanan profesional dan produk
+                berkualitas tinggi yang kami tawarkan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div className="bg-black pb-10 pt-56">
+          <h2 className="text-center text-4xl font-bold text-white">Layanan</h2>
+        </div>
+        <div className="bg-[#DDDDDD] px-5 py-20 lg:px-0">
+          <div className="container mx-auto flex flex-col gap-20">
+            <ServiceItem
+              id={1}
+              title="Spareparts Contract Support"
+              description="PT. Jinan Truck Power Indonesia menyediakan layanan dukungan kontrak
+            suku cadang yang memastikan ketersediaan suku cadang yang Anda
+            butuhkan tepat waktu dan dalam kondisi terbaik. Kami memiliki
+            berbagai jenis suku cadang asli untuk berbagai model kendaraan dari
+            merek-merek terkenal."
+              imageSrc="/layanan1.jpg"
+            />
+            <ServiceItem
+              id={2}
+              title="Unit Purchase"
+              description="Dengan jaringan pemasok yang luas dan pengalaman
+                    bertahun-tahun, kami memastikan Anda mendapatkan unit
+                    kendaraan yang sesuai dengan kebutuhan dan anggaran Anda.
+                    Produk kami meliputi truk, alat berat, dan kendaraan
+                    komersial lainnya dari merek-merek terkemuka seperti
+                    SINOTRUK, SITRAK, WEICHAI, dan SANY."
+              imageSrc="/layanan2.jpg"
+            />
+            <ServiceItem
+              id={3}
+              title="VHS Spareparts Contract"
+              description="Layanan kontrak suku cadang VHS kami dirancang untuk
+                    memberikan solusi yang fleksibel dan efisien bagi perusahaan
+                    yang membutuhkan pengelolaan suku cadang dalam jumlah besar.
+                    Dengan layanan ini, Anda dapat memastikan bahwa semua suku
+                    cadang yang dibutuhkan tersedia kapan saja diperlukan,
+                    sehingga operasional kendaraan dan peralatan Anda tidak
+                    terganggu."
+              imageSrc="/layanan3.jpg"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="bg-black py-20 text-white">
+        <div className="container mx-auto">
+          <h2 className="text-center text-3xl font-semibold">Mengapa Kami ?</h2>
+          <div className="mt-10 grid grid-cols-1 gap-10 px-5 lg:grid-cols-2 lg:px-0">
+            <WhyUsItem
+              title="Kualitas Produk Terjamin"
+              description="Kami hanya menyediakan produk berkualitas tinggi dari
+                merek-merek terkenal yang telah terbukti handal dan tahan lama.
+                Semua suku cadang dan unit kendaraan kami memenuhi standar
+                industri tertinggi."
+            />
+            <WhyUsItem
+              title="Layanan yang Prima"
+              description="Tim layanan pelanggan kami selalu siap membantu Anda dengan
+                pertanyaan atau kebutuhan spesifik Anda. Kami berkomitmen untuk
+                memberikan solusi terbaik dan pelayanan yang cepat dan
+                responsif."
+            />
+            <WhyUsItem
+              title="Pengalaman dan Keahlian"
+              description="PT. Jinan Truck Power Indonesia memiliki pengetahuan dan
+                keahlian untuk memberikan solusi yang sesuai dengan kebutuhan
+                Anda. Tim teknisi dan ahli kami selalu siap memberikan dukungan
+                teknis dan konsultasi profesional."
+            />
+            <WhyUsItem
+              title="Wilayah Pemasaran Luas"
+              description="Kami melayani pelanggan di seluruh Indonesia, memastikan bahwa
+                Anda dapat mengakses produk dan layanan kami dengan mudah dan
+                cepat."
+            />
+          </div>
+        </div>
+      </section>
+      <div className="fixed bottom-5 right-5 flex flex-col gap-3">
+        <Link href="tel:087880215500" className="cursor-pointer">
+          <div className="w-fit rounded-full bg-blue-500 p-2">
+            <BsFillTelephoneFill size={30} color="white" />
+          </div>
+        </Link>
+        <Link
+          href="https://api.whatsapp.com/send?phone=6287880215500"
+          className="cursor-pointer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className="w-fit rounded-full bg-green-500 p-2">
+            <FaWhatsapp size={30} color="white" />
+          </div>
+        </Link>
       </div>
     </main>
   );
