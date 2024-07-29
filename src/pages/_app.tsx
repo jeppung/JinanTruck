@@ -21,8 +21,11 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Jinan Truck Power Indonesia - menyediakan layanan profesional dalam bidang Spareparts Contract Support, Unit Purchase, dan VHS Spareparts Contract"
         />
-        <meta property="og:image" content="/opengraph-image.jpg" />
-        <meta property="og:url" content="/opengraph-image.jpg" />
+        <meta
+          property="og:image"
+          content="https://jinan-truck-demo.vercel.app/opengraph-image.jpg"
+        />
+        <meta property="og:url" content="https://jinan-truck-demo.vercel.app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
