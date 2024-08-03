@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="inline">
-      <div className="sticky top-0 z-50 bg-[#000000] px-5 text-white md:px-0">
+      <div className="sticky top-0 z-50 bg-[#000000] px-5 text-white xl:px-0">
         <div className="container mx-auto flex items-center justify-between py-6">
           <Link href={"/"}>
             <Image

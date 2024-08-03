@@ -15,7 +15,6 @@ export default function Home() {
           layout="responsive"
           width={0}
           height={0}
-          quality={100}
           priority
           alt="banner"
         />
@@ -58,7 +57,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-[#666666] py-20" id="aboutus">
-        <div className="container mx-auto flex flex-col items-center gap-20 p-5 lg:flex-row">
+        <div className="container mx-auto flex flex-col items-center gap-20 p-5 xl:flex-row">
           <div>
             <Image
               src={"/about-us.png"}
@@ -101,7 +100,7 @@ export default function Home() {
         <div className="bg-black pb-10 pt-56">
           <h2 className="text-center text-4xl font-bold text-white">Layanan</h2>
         </div>
-        <div className="bg-[#DDDDDD] px-5 py-20 lg:px-0">
+        <div className="bg-[#DDDDDD] px-5 py-20 xl:px-0">
           <div className="container mx-auto flex flex-col gap-20">
             <ServiceItem
               id={1}
@@ -142,7 +141,7 @@ export default function Home() {
       <section className="bg-black py-20 text-white">
         <div className="container mx-auto">
           <h2 className="text-center text-3xl font-semibold">Mengapa Kami ?</h2>
-          <div className="mt-10 grid grid-cols-1 gap-10 px-5 lg:grid-cols-2 lg:px-0">
+          <div className="mt-10 grid grid-cols-1 gap-10 px-5 lg:grid-cols-2 xl:px-0">
             <WhyUsItem
               title="Kualitas Produk Terjamin"
               description="Kami hanya menyediakan produk berkualitas tinggi dari

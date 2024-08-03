@@ -16,12 +16,14 @@ const ServiceItem = ({
   description,
 }: ServiceItemProps) => {
   return (
-    <div className="relative flex flex-col overflow-clip rounded bg-black text-white lg:flex-row">
-      <div className="absolute left-0 flex h-12 w-12 items-center justify-center bg-black">
+    <div className="relative grid grid-cols-1 overflow-clip rounded bg-black text-white lg:grid-cols-3">
+      <div className="absolute left-0 z-10 flex h-12 w-12 items-center justify-center bg-black">
         <p>{id}</p>
       </div>
-      <Image alt={title} src={imageSrc} width={500} height={0} />
-      <div className="flex-2 flex flex-col gap-5 p-8">
+      <div className="relative z-0 h-60 w-full lg:h-full">
+        <Image alt={title} src={imageSrc} fill />
+      </div>
+      <div className="flex-2 col-span-2 flex flex-col gap-5 p-8">
         <h2 className="text-2xl font-semibold">{title}</h2>
         <div className="border-b border-t border-b-slate-500 border-t-slate-500 py-3">
           <p className="font-light">{description}</p>

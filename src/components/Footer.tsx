@@ -9,20 +9,14 @@ import { IoIosMailUnread } from "react-icons/io";
 const Footer = () => {
   return (
     <footer className="bg-[#111111] py-20">
-      <div className="container mx-auto grid grid-cols-1 justify-center gap-10 px-5 lg:grid-cols-3 lg:px-0">
+      <div className="container mx-auto grid grid-cols-1 justify-center gap-10 px-5 lg:grid-cols-3 xl:px-0">
         <div>
           <Image
-            className="hover:cursor-pointer"
             src={"/jinantruck-logo.png"}
             width={250}
             height={200}
             alt="jinantruck-logo"
           />
-          <div className="mt-5 flex gap-2">
-            <div className="w-fit cursor-pointer rounded-full bg-white p-2">
-              <FaFacebook size={20} />
-            </div>
-          </div>
           <div className="mt-5">
             <small className="font-light text-white">
               © 2024 PT. Jinan Truck Power Indonesia All Rights Reserved
