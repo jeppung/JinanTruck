@@ -13,6 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
           Purchase, dan VHS Spareparts Contract
         </title>
         <meta
+          name="google-site-verification"
+          content="2mt9bPSXViwwrma9CFD92Y-YMIsC5g8S-9v5xCnzLRE"
+        />
+        <meta
           name="description"
           content="Jinan Truck Power Indonesia - menyediakan layanan profesional dalam bidang Spareparts Contract Support, Unit Purchase, dan VHS Spareparts Contract"
         />
@@ -26,6 +30,10 @@ export default function App({ Component, pageProps }: AppProps) {
           content="https://jinan-truck-demo.vercel.app/opengraph-image.jpg"
         />
         <meta property="og:url" content="https://jinan-truck-demo.vercel.app" />
+        <meta
+          name="google-site-verification"
+          content="2mt9bPSXViwwrma9CFD92Y-YMIsC5g8S-9v5xCnzLRE"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

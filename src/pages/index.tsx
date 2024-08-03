@@ -69,10 +69,10 @@ export default function Home() {
           </div>
           <div className="flex-1 text-white">
             <div>
-              <h2 className="text-2xl font-bold text-black">
+              <h1 className="text-2xl font-bold text-black">
                 PT. Jinan Truck Power Indonesia
-              </h2>
-              <p>produsen truk tugas berat professional</p>
+              </h1>
+              <h2>Produsen truk tugas berat professional</h2>
             </div>
             <div className="mt-5 flex flex-col gap-5 font-light">
               <p>
