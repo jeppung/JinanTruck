@@ -45,15 +45,25 @@ export default function Home() {
       <section className="bg-black">
         <div className="container mx-auto flex flex-wrap justify-center gap-5 px-5 py-20 lg:px-0">
           <Showcase
+            desc="sinotruk-howo"
             imageSrc="/1-sinotruk-1.png"
             titleSrc="/sinotruk-logo.png"
           />
-          <Showcase imageSrc="/2-sitrak.png" titleSrc="/sitrak-logo.png" />
           <Showcase
+            desc="sitrak-howo"
+            imageSrc="/2-sitrak.png"
+            titleSrc="/sitrak-logo.png"
+          />
+          <Showcase
+            desc="weichai"
             imageSrc="/weichai-engine.png"
             titleSrc="/weichai-logo.png"
           />
-          <Showcase imageSrc="/4-sany.png" titleSrc="/sany-logo.png" />
+          <Showcase
+            desc="sany"
+            imageSrc="/4-sany.png"
+            titleSrc="/sany-logo.png"
+          />
         </div>
       </section>
       <section className="bg-[#666666] py-20" id="aboutus">
