@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMailUnread } from "react-icons/io";
 
@@ -29,7 +29,7 @@ const Footer = () => {
             <span className="font-bold">PT. Jinan Truck Power Indonesia</span>{" "}
             adalah perusahaan terkemuka yang menyediakan layanan profesional
             dalam bidang Spareparts Contract Support, Unit Purchase, dan VHS
-            Spareparts Contract dengan produk berkualitas tinggi dari
+            Spareparts Contract. Dengan produk berkualitas tinggi dari
             merek-merek terkenal seperti{" "}
             <span className="font-bold">SINOTRUK &#40;HOWO&#41;</span> ,{" "}
             <span className="font-bold">SITRAK &#40;HOWO&#41;</span>,{" "}

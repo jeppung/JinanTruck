@@ -91,9 +91,12 @@ export default function Home() {
                 Purchase, dan VHS Spareparts Contract. Berdedikasi untuk
                 melayani pelanggan di wilayah Jabodetabek, kami bangga menjadi
                 mitra terpercaya bagi industri otomotif dan konstruksi. Dengan
-                produk berkualitas tinggi dari merek-merek terkenal seperti
-                SINOTRUK &#40;HOWO&#41;, SITRAK &#40;HOWO&#41;, WEICHAI, dan
-                SANY, kami siap memenuhi segala kebutuhan Anda.
+                produk berkualitas tinggi dari merek-merek terkenal seperti{" "}
+                <span className="font-bold">SINOTRUK &#40;HOWO&#41;</span> ,{" "}
+                <span className="font-bold">SITRAK &#40;HOWO&#41;</span>,{" "}
+                <span className="font-bold">WEICHAI</span>, dan{" "}
+                <span className="font-bold">SANY</span>, kami siap memenuhi
+                segala kebutuhan Anda.
               </p>
               <p>
                 Dengan PT. Jinan Truck Power Indonesia, Anda mendapatkan lebih
