@@ -29,7 +29,13 @@ const Footer = () => {
             <span className="font-bold">PT. Jinan Truck Power Indonesia</span>{" "}
             adalah perusahaan terkemuka yang menyediakan layanan profesional
             dalam bidang Spareparts Contract Support, Unit Purchase, dan VHS
-            Spareparts Contract.
+            Spareparts Contract dengan produk berkualitas tinggi dari
+            merek-merek terkenal seperti{" "}
+            <span className="font-bold">SINOTRUK &#40;HOWO&#41;</span> ,{" "}
+            <span className="font-bold">SITRAK &#40;HOWO&#41;</span>,{" "}
+            <span className="font-bold">WEICHAI</span>, dan{" "}
+            <span className="font-bold">SANY</span>, kami siap memenuhi segala
+            kebutuhan Anda.
           </p>
         </div>
         <div className="text-white" id="contact">
