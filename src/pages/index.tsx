@@ -92,8 +92,8 @@ export default function Home() {
                 melayani pelanggan di wilayah Jabodetabek, kami bangga menjadi
                 mitra terpercaya bagi industri otomotif dan konstruksi. Dengan
                 produk berkualitas tinggi dari merek-merek terkenal seperti
-                SINOTRUK, SITRAK, WEICHAI, dan SANY, kami siap memenuhi segala
-                kebutuhan Anda.
+                SINOTRUK &#40;HOWO&#41;, SITRAK &#40;HOWO&#41;, WEICHAI, dan
+                SANY, kami siap memenuhi segala kebutuhan Anda.
               </p>
               <p>
                 Dengan PT. Jinan Truck Power Indonesia, Anda mendapatkan lebih
@@ -130,7 +130,7 @@ export default function Home() {
                     kendaraan yang sesuai dengan kebutuhan dan anggaran Anda.
                     Produk kami meliputi truk, alat berat, dan kendaraan
                     komersial lainnya dari merek-merek terkemuka seperti
-                    SINOTRUK, SITRAK, WEICHAI, dan SANY."
+                    SINOTRUK (HOWO), SITRAK (HOWO), WEICHAI, dan SANY."
               imageSrc="/layanan2.jpg"
             />
             <ServiceItem
