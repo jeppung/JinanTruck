@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col justify-between gap-5 py-[20px] lg:flex-row">
           <div className="flex flex-col items-center gap-0 lg:items-start">
             <h2 className="text-2xl">Welcome to our website</h2>
-            <p className="font-light">www.jinantruck.web.id</p>
+            <p className="font-light">jinan-truck-demo.vercel.app</p>
           </div>
           <div className="flex overflow-clip rounded-lg">
             <div className="flex h-full w-full items-center justify-center bg-[#999999] py-5 text-center lg:w-96">
