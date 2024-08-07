@@ -9,8 +9,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>
-          JinanTruck - layanan professional Spareparts Contract Support, Unit
-          Purchase, dan VHS Spareparts Contract
+          Jinan Truck - layanan profesional sparepart truck, contract support,
+          unit purchase, dan VHS spareparts.
         </title>
         <meta
           name="google-site-verification"
@@ -18,12 +18,12 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name="description"
-          content="Jinan Truck Power Indonesia - menyediakan layanan profesional dalam bidang Spareparts Contract Support, Unit Purchase, dan VHS Spareparts Contract dengan produk berkualitas tinggi dari merek-merek terkenal seperti SINOTRUK (HOWO), SITRAK (HOWO), WEICHAI, dan SANY, kami siap memenuhi segala kebutuhan Anda."
+          content="Jinan Truck Power Indonesia - Ahli dalam layanan sparepart truck, contract support, unit purchase, dan VHS spareparts. Kami menyediakan produk berkualitas dari SINOTRUK (HOWO), SITRAK (HOWO), WEICHAI, dan SANY."
         />
-        <meta property="og:title" content="JinanTruck" />
+        <meta property="og:title" content="Jinan Truck" />
         <meta
           property="og:description"
-          content="Jinan Truck Power Indonesia - menyediakan layanan profesional dalam bidang Spareparts Contract Support, Unit Purchase, dan VHS Spareparts Contract dengan produk berkualitas tinggi dari merek-merek terkenal seperti SINOTRUK (HOWO), SITRAK (HOWO), WEICHAI, dan SANY, kami siap memenuhi segala kebutuhan Anda."
+          content="Jinan Truck Power Indonesia - Ahli dalam layanan sparepart truck, contract support, unit purchase, dan VHS spareparts. Kami menyediakan produk berkualitas dari SINOTRUK (HOWO), SITRAK (HOWO), WEICHAI, dan SANY."
         />
         <meta
           property="og:image"
